@@ -12,7 +12,7 @@ export default function Register(){
                 <p class="text-lg ">Join us and start your betting journey!</p>
             </div>
         </div>
-        <div class="pt-[2rem] flex flex-col gap-4 w-[359px]">
+        <div class="pt-[2rem] flex flex-col gap-6 w-[359px]">
             <input type="text" placeholder="Full Name" class="input-field"/>
             <input type="email" placeholder="Email Address" class="input-field"/>
             <input type="password" placeholder="Password" class="input-field"/>
@@ -22,7 +22,7 @@ export default function Register(){
             <input type="text" placeholder="Country" class="input-field"/>
             <div className='flex flex-col gap-[1rem]'>
                 <button class="bg-[#E63A17] text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300 mt-[2rem]">Create Account</button>
-                <p className='text-[#999999]'>Already a user?<Link href="#" className='text-[#D4410F] cursor-pointer px-2'>Login</Link></p>
+                <p className='text-[#999999]'>Already a user?<Link href="/login" className='text-[#D4410F] cursor-pointer px-2'>Login</Link></p>
             </div>
         </div>
        
