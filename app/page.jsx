@@ -11,18 +11,18 @@ export default function Home() {
           <div className="flex flex-col items-center text-center gap-[6rem]">
             <Image src="/images/logo.png" width={380} height={240}/>
             <div className="flex gap-[15px] text-[400] text-[10px] cursor-pointer ">
-              <div className="flex gap-[8px] py-[8px] px-[12px] bg-[#131A18] rounded-[7px] text-white">
+              <Link href="#" className="flex gap-[8px] items-center text-center py-[8px] items-center text-center px-[12px] bg-[#131A18] rounded-[7px] text-white">
                 <FaGoogle size={19}/>
                 <p>Continue with Google</p>
-              </div>
-              <div className="flex gap-[8px] py-[8px] px-[12px] bg-[#D4410F] rounded-[7px] text-white">
+              </Link>
+              <Link className="flex gap-[8px] items-center text-center py-[8px] items-center text-center px-[12px] bg-[#D4410F] rounded-[7px] text-white" href="/register">
                 <Image src="/images/logo_icon.png" width={19} height={19}/>
                 <p>Continue with 96bet</p>
-              </div>
-              <div className="flex gap-[8px] py-[8px] px-[12px] bg-[#131A18] rounded-[7px] text-white">
+              </Link>
+              <Link href="#" className="flex gap-[8px] items-center text-center py-[8px] items-center text-center px-[12px] bg-[#131A18] rounded-[7px] text-white">
               <AiFillApple size={19}/>
                 <p>Continue with Apple</p>
-              </div>
+              </Link>
             </div>
           </div>
           <div>
