@@ -5,8 +5,8 @@ import { AiFillApple } from "react-icons/ai";
 
 export default function Home() {
   return (
-    <main className="w-full h-screen bg-black ">
-      <div className=" home h-[100vh] w-full bg-no-repeat bg-cover bg-center bg-fixed"  style={{ backgroundImage: `url(images/home_bg.png)`, height: '80vh' }}>
+    <main className="w-full h-screen bg-black bg-cover bg-center bg-no-repeat ">
+      <div className=" h-[100vh] w-full bg-no-repeat bg-cover bg-center bg-fixed"  style={{ backgroundImage: `url(images/home_bg.png)`, height: '100vh' }}>
         <div className=" flex flex-col gap-[2rem] absolute z-50 md:top-[35%] top-[12%] left-0 w-full items-center text-center justify-center">
           <div className="flex flex-col items-center text-center gap-[6rem]">
             <Image src="/images/logo.png" className="md:block hidden" width={380} height={240}/>

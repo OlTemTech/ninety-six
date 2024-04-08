@@ -1,11 +1,12 @@
 import React from 'react';
 import Image from "next/image";
 import Link from 'next/link';
+import LoginMobile from '@/components/login_mobile';
 
-export default function Register(){
+export default function Login(){
     return(
-<main class="h-screen overflow-hidden " style={{ backgroundImage: `url(images/register_bg.png)`, height: '100vh' }}>
-    <div class="min-h-screen w-full flex items-center text-center justify-center   absolute border z-50">
+<main class="login h-screen overflow-hidden  bg-cover bg-center bg-no-repeat " style={{ backgroundImage: `url(images/register_bg.png)`, height: '100vh' }}>
+    <div class="min-h-screen w-full 2xl:flex items-center text-center justify-center absolute border z-50 hidden">
         <div class="grid grid-cols-2 gap-8 text-white">
             <div class="flex flex-col justify-center items-center">
                 <Image src="/images/logo.png" width={280} height={29}/>
@@ -23,6 +24,7 @@ export default function Register(){
        
     </div>
     <div className=" h-[100vh] w-[100vw] top-0 opacity-80 mx-auto bg-black"></div>
+    <LoginMobile/>
 </main>
     )
 }

@@ -15,11 +15,7 @@
   outline: none;
   text-decoration: none;
 }
-.home{
-  background-position: center;
-  background-clip: content-box !important;
-  height: 100% !important;
-}
+
 
 .input-field {
   border: 1px solid #F04545;
@@ -33,3 +29,21 @@
   color: gray;
 }
 
+@media(max-width:424px){
+  .register{
+    height: 110vh !important;
+  }
+}
+@media(max-width:380px){
+  .register{
+    height: 125vh !important;
+  }
+}
+@media(max-width:330px){
+  .register{
+    height: 145vh !important;
+  }
+  .login_mobile{
+    top: 2rem !important;
+  }
+}
