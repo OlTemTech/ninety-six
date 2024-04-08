@@ -30,7 +30,7 @@ export default function Home() {
           </div>
           
         </div>
-        <div className="h-full w-full opacity-50 mx-auto pt-[15%] bg-black" m-auto></div>
+        <div className="h-full w-full opacity-50 mx-auto pt-[15%] bg-black"></div>
       </div>
     </main>
   );
