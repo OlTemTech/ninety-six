@@ -19,7 +19,7 @@ export default function Register(){
             <input type="password" placeholder="Password" class="input-field"/>
             <input type="password" placeholder="Confirm Password" class="input-field"/>
             <input type="text" placeholder="Phone Number" class="input-field"/>
-            <input type="date" placeholder="Date of Birth" class="input-field"/>
+            <input type="date" placeholder="Date of Birth" class="input-field" className='w-full'/>
             <input type="text" placeholder="Country" class="input-field"/>
             <div className='flex flex-col gap-[1rem]'>
                 <button class="bg-[#E63A17] text-white py-2 rounded-lg hover:opacity-70 transition duration-300 mt-[2rem]">Create Account</button>
