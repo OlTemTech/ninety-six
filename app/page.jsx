@@ -7,10 +7,11 @@ export default function Home() {
   return (
     <main className="w-full h-screen bg-black ">
       <div className=" home h-[100vh] w-full bg-no-repeat bg-cover bg-center bg-fixed"  style={{ backgroundImage: `url(images/home_bg.png)`, height: '80vh' }}>
-        <div className=" flex flex-col gap-[2rem] absolute z-50 top-[35%] left-0 w-full items-center text-center justify-center">
+        <div className=" flex flex-col gap-[2rem] absolute z-50 md:top-[35%] top-[12%] left-0 w-full items-center text-center justify-center">
           <div className="flex flex-col items-center text-center gap-[6rem]">
-            <Image src="/images/logo.png" width={380} height={240}/>
-            <div className="flex gap-[15px] text-[400] text-[10px] cursor-pointer ">
+            <Image src="/images/logo.png" className="md:block hidden" width={380} height={240}/>
+            <Image src="/images/logo.png" className="block md:hidden" width={260} height={140}/>
+            <div className="flex md:flex-row flex-col gap-[15px] text-[400] text-[10px] cursor-pointer ">
               <Link href="#" className="flex gap-[8px] items-center text-center py-[8px] items-center text-center px-[12px] bg-[#131A18] rounded-[7px] text-white">
                 <FaGoogle size={19}/>
                 <p>Continue with Google</p>
