@@ -29,14 +29,10 @@
   color: gray;
 }
 
-@media(max-width:424px){
-  .register{
-    height: 110vh !important;
-  }
-}
+
 @media(max-width:380px){
   .register{
-    height: 125vh !important;
+    height: 118vh !important;
   }
 }
 @media(max-width:330px){
