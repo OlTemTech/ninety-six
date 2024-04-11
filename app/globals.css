@@ -28,6 +28,9 @@
 .input-field::placeholder{
   color: gray;
 }
+.nav_contents{
+  z-index: 1000;
+}
 
 
 @media(max-width:380px){

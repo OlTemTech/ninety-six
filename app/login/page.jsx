@@ -14,14 +14,14 @@ export default function Login(){
                         <p class="text-lg ">continue your betting journey!!!!</p>
                     </div>
                 </div>
-                <div class="pt-[2rem] flex flex-col gap-6 w-[359px]">
+                <form class="pt-[2rem] flex flex-col gap-6 w-[359px]">
                     <input type="email" placeholder="Email Address" class="input-field"/>
                     <input type="password" placeholder="Password" class="input-field"/>
                     <div className='flex flex-col gap-[1rem]'>
-                        <button class="bg-[#E63A17] text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300 mt-[2rem]">Login</button>
+                        <Link href="/game_zone" class="bg-[#E63A17] text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300 mt-[2rem]">Login</Link>
                         <p className='text-[#999999]'>A new user?<Link href="/register" className='text-[#D4410F] cursor-pointer px-2'>Create account</Link></p>
                     </div>
-                </div>
+                </form>
             
             </div>
             <div className=" h-[100vh] w-[100vw] top-0 opacity-70 mx-auto bg-black"></div>
