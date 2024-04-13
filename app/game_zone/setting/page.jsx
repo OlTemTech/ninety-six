@@ -1,4 +1,5 @@
-import React from 'react';
+"use client";
+import {React, useEffect} from 'react';
 import Image from "next/image";
 import Link from 'next/link';
 import { BiArrowBack } from "react-icons/bi";
@@ -8,6 +9,16 @@ import { MdGames } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 
 export default function Setting(){
+    const isMobileOrTablet = () => {
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+        const isMobile = screenWidth < 768 && screenHeight < 1024;
+        if (isMobile && screen.orientation && screen.orientation.lock) {
+            screen.orientation.lock('landscape');
+          } else {
+            alert('This device does not support screen orientation lock or is not a mobile/tablet.');
+          }
+      };
     const components = Array.from({ length: 6 }, (_, i) => i + 1);
     return(
     <main>
@@ -49,7 +60,7 @@ export default function Setting(){
                 </div>
                 <div className='flex flex-col gap-[2rem] w-[504px] py-[6rem] text-white'>
                     <div className='flex justify-between font-[400]'>
-                        <button className=' text-[18px] bg-gradient-to-l from-red-800 to-transparent px-[5px]'>Friends</button>
+                        <button className=' text-[18px] bg-gradient-to-l from-red-800 to-transparent px-[5px]' onClick={isMobileOrTablet}>Friends</button>
                         <button className='bg-black rounded-[10px]  text-[13px] px-[1rem] py-[10px]'>Invite a Friend</button>
                     </div>
                     <div className='flex flex-col gap-[2rem] border border-[#E63A17] rounded-[10px] px-[10px] py-[2rem]'>
