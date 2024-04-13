@@ -24,7 +24,7 @@ export default function NavBar(){
                     <div className='flex gap-4 items-center cursor-pointer'>
                         < BiSolidChat size={20} className='hover:text-red-500' />
                         < FaUserGroup size={20} className='hover:text-red-500' />
-                        < IoMdSettings size={20} className='hover:text-red-500' />
+                        <Link href="/game_zone/setting">< IoMdSettings size={20} className='hover:text-red-500' /></Link>
                     </div>
                     <div className='flex gap-2 items-center'>
                         <div className='flex'>
