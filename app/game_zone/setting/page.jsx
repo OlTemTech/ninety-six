@@ -13,8 +13,8 @@ export default function Setting(){
         const screenWidth = window.innerWidth;
         const screenHeight = window.innerHeight;
         const isMobile = screenWidth < 768 && screenHeight < 1024;
-        if (isMobile && screen.orientation && screen.orientation.lock) {
-            screen.orientation.lock('landscape');
+        if (isMobile) {
+            document.documentElement.requestFullscreen().then(()=>screen.orientation.lock("portrait"));
           } else {
             alert('This device does not support screen orientation lock or is not a mobile/tablet.');
           }
