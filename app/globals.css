@@ -38,7 +38,7 @@
   display: none !important;
 }
 
-@media(max-width:1024px){
+@media(max-width:415px){
   .warning{
     display: block !important;
   }
@@ -54,5 +54,10 @@
   }
   .login_mobile{
     top: 2rem !important;
+  }
+}
+@media(max-width: 1023px) and (min-height: 960px) {
+  .warning{
+    display: block !important;
   }
 }
