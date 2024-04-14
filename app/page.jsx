@@ -4,6 +4,7 @@ import { FaGoogle } from "react-icons/fa6";
 import { AiFillApple } from "react-icons/ai";
 
 export default function Home() {
+  
   return (
     <main className="w-full h-screen bg-black bg-cover bg-center bg-no-repeat ">
       <div className=" h-[100vh] w-full bg-no-repeat bg-cover bg-center bg-fixed"  style={{ backgroundImage: `url(images/home_bg.png)`, height: '100vh' }}>
