@@ -34,8 +34,15 @@
 .nav_contents{
   z-index: 1000;
 }
+.warning{
+  display: none !important;
+}
 
-
+@media(max-width:415px){
+  .warning{
+    display: block !important;
+  }
+}
 @media(max-width:380px){
   .register{
     height: 118vh !important;

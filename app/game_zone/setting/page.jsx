@@ -11,25 +11,17 @@ import { MdDelete } from "react-icons/md";
 export default function Setting(){
 
 
-    function isMobileOrTablet() {
-        var screenWidth = window.innerWidth;
-        
-        var mobileBreakpoint = 415;
-        var tabletBreakpoint = 848
-       if (screenWidth < mobileBreakpoint) {
-            alert("change screen to lanscape for better experience")
-        }
-    }
-
-    useEffect(()=>{
-        isMobileOrTablet()
-    },[])
     const components = Array.from({ length: 6 }, (_, i) => i + 1);
     return(
     <main>
         
         <div class=" h-screen overflow-hidden relative bg-cover bg-center bg-no-repeat block " style={{ backgroundImage: `url(images/setting_bg.png)`, height: '100vh' }}>
-        <div className='flex relative justify-between px-[10%] w-full h-screen z-50'>
+        
+        <div className='warning text-white absolute top-0 left-0 h-full w-[1000px] z-50 bg-black py-[25%]'>
+            <p className='relative'>change screen to landscape</p>
+        </div>
+       
+        <div className='flex relative justify-between px-[10%] w-full h-screen z-40'>
              <div className='relative flex flex-col gap-[2rem]'>
                  <div className='flex gap-3 text-white items-center text-[18px] font-[700] py-[4rem]'>
                      <Link href="/game_zone"><BiArrowBack size={16} className='cursor-pointer'/></Link>
