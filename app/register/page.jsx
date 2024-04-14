@@ -6,7 +6,7 @@ import RegisterMobile from '@/components/register_mobile';
 export default function Register(){
     return(
     <main>
-        <div class=" h-[100vh] overflow-scroll  bg-cover bg-center bg-no-repeat hidden 2xl:block" style={{ backgroundImage: `url(images/register_bg.png)`}}>
+        <div class="h-[100hv]  overflow-hidden  bg-cover bg-center bg-no-repeat hidden 2xl:block" style={{ backgroundImage: `url(images/register_bg.png)`}}>
             <div class="min-h-screen w-full 2xl:flex items-center text-center justify-center absolute border z-50 hidden">
                 <div class="grid grid-cols-2 gap-8 text-white">
                     <div class="flex flex-col justify-center">

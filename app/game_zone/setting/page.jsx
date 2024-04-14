@@ -15,7 +15,7 @@ export default function Setting(){
     return(
     <main>
         
-        <div class=" h-screen overflow-hidden relative bg-cover bg-center bg-no-repeat block " style={{ backgroundImage: `url(images/setting_bg.png)`, height: '100vh' }}>
+        <div class=" h-screen overflow-hidden relative bg-cover bg-contain bg-no-repeat block " style={{ backgroundImage: `url(images/setting_bg.png)`, height: '100vh' }}>
         
         <div className='warning text-white absolute top-0 left-0 h-full w-[100vw] z-50 bg-black py-[25%]'>
             <p className='relative'>change screen to landscape</p>

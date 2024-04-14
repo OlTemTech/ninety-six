@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 export default function LoginMobile(){
     return(
-<div class="login h-screen overflow-hidden  bg-cover bg-center bg-no-repeat 2xl:hidden block " style={{ backgroundImage: `url(images/mobile_auth.png)`, height: '100vh' }}>
-    <div class="login_mobile w-full absolute text-white  block 2xl:hidden md:top-[15rem]  top-[8rem] left-0 items-center text-center justify-center z-50">
+<div class="login overflow-scroll  bg-cover bg-center bg-no-repeat 2xl:hidden block " style={{ backgroundImage: `url(images/mobile_auth.png)`, height: '100vh' }}>
+    <div class="login_mobile w-full relative text-white  block 2xl:hidden md:top-[15rem]  top-[8rem] left-0 items-center text-center justify-center z-50">
         <h1 class="text-[16px] font-[500] mb-4 flex gap-2 pb-[1rem] self-center justify-center">Welcome to <Image src="/images/big_logo.png" width={96} height={29}/></h1>
         <form class="pt-[2rem] flex flex-col gap-6 w-full md:px-[6rem] px-[1rem]">
             <input type="email" placeholder="Email Address" class="input-field"/>
@@ -17,7 +17,7 @@ export default function LoginMobile(){
         </form>
        
     </div>
-    <div className=" h-[100vh] w-[100vw] top-0 opacity-70 mx-auto bg-black"></div>
+    <div className=" h-[101vh] w-full absolute top-0 opacity-80 mx-auto bg-black"></div>
 
 </div>
     )

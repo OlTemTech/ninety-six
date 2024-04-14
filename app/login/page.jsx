@@ -24,7 +24,7 @@ export default function Login(){
                 </form>
             
             </div>
-            <div className=" h-[100vh] w-[100vw] top-0 opacity-70 mx-auto bg-black"></div>
+            <div className="  h-[100vh] w-[100vw] top-0 opacity-70 mx-auto bg-black"></div>
         </div>
         <LoginMobile/>
     </main>

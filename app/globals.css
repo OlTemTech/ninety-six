@@ -38,18 +38,28 @@
   display: none !important;
 }
 
+@media(max-width:880px){
+  .register, .cover_bg{
+    height: 118vh !important;
+  }
+}
+
 @media(max-width:415px){
   .warning{
     display: block !important;
   }
 }
 @media(max-width:380px){
-  .register{
+  .register,
+  .login,
+   .cover_bg{
     height: 118vh !important;
   }
 }
 @media(max-width:330px){
-  .register{
+  .register,
+  .login,
+   .cover_bg{
     height: 145vh !important;
   }
   .login_mobile{

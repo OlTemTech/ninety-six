@@ -22,7 +22,7 @@ const setting = {
 export default function Login(){
     return(
     <main>
-        <div class=" h-screen overflow-hidden  bg-cover bg-center bg-no-repeat block items-center mx-auto " style={{ backgroundImage: `url(images/register_bg.png)`, height: '100vh' }}>
+        <div class=" h-screen overflow-hidden  bg-cover bg-center bg-no-repeat block items-center mx-auto " style={{ backgroundImage: `url(images/game_zone_bg.jpg)`, height: '100vh' }}>
             <NavBar/>
             <div className='h-[100vh] w-full  my-[20%] px-[10%] relative z-50'>
                 <Slider {...setting} className='w-full h-[174px]' >
@@ -30,14 +30,14 @@ export default function Login(){
                     <div className='h-full relative z-50 flex w-[207px] mx-auto px-[2rem]  cursor-pointer' key={index}>
                         <div className='absolute h-[100%] w-[82%] mx-[2rem] left-0 bg-black opacity-50 rounded-[1rem]'></div>
                         <div className='h-[174px] bg-black text-center items-center bg-center bg-cover rounded-[1rem] py-[20%]'  style={{ backgroundImage: `url(${game.image})` }}>
-                            <p className='z-50 relative text-white text-[20px] font-[700]'>{game.descriptive}</p>
+                            <p className='z-50 relative text-white text-[20px] font-[700] z-50'>{game.descriptive}</p>
                         </div>
                     </div>
                     ))}
                     
                 </Slider>
             </div>
-            <div className=" h-[100vh] w-[100vw] absolute top-0 opacity-10 mx-auto bg-black"></div>
+            <div className=" h-[100vh] w-[100vw] absolute top-0 opacity-50 mx-auto bg-black"></div>
            
         </div>
     </main>
