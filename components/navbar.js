@@ -8,12 +8,12 @@ import { AiOutlinePlus } from "react-icons/ai";
 
 export default function NavBar(){
     return(
-        <nav className='fixed bg-transparent z-50 w-full'>
+        <nav className='fixed bg-transparent z-40 w-full'>
            
             <div className='flex justify-between relative px-[3rem] py-[10px] z-50 text-white'>
                 <div className='flex gap-4 items-center cursor-pointer'>
                     <div>
-                        <Image src="/images/profile_pic.png" width={46} height={46}/>
+                        <Image src="/images/profile_pic.png" width={46} height={46} className='2xl:w-46 w-8 '/>
                     </div>
                     <div>
                         <p className='text-[18px] font-[700]'>Anthony</p>

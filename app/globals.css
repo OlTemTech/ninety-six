@@ -48,6 +48,7 @@
   .warning{
     display: block !important;
   }
+  
 }
 @media(max-width:380px){
   .register,
@@ -55,6 +56,7 @@
    .cover_bg{
     height: 118vh !important;
   }
+
 }
 @media(max-width:330px){
   .register,
@@ -69,5 +71,10 @@
 @media(max-width: 1023px) and (min-height: 960px) {
   .warning{
     display: block !important;
+  }
+}
+@media(max-width: 850px) and (min-height: 205px) {
+  .game-zone{
+    margin-block: 12% !important;
   }
 }
